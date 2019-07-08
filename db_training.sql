@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Jul 2019 pada 19.36
+-- Waktu pembuatan: 08 Jul 2019 pada 02.58
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.6
 
@@ -111,7 +111,9 @@ INSERT INTO `tmedia` (`fmediaid`, `fmediaoriginalname`, `fmediatype`, `fmediapat
 (5, 'module_39711027dd95d6a5dfda24d14af71c4f.JPG', 'image/jpeg', '/assets/backend/media/uploads/module_39711027dd95d6a5dfda24d14af71c4f.JPG', 1, '0000-00-00 00:00:00', 1),
 (6, 'module_05530d032def5c26549c04ef1fcfaa22.JPG', 'image/jpeg', '/assets/backend/media/uploads/module_05530d032def5c26549c04ef1fcfaa22.JPG', 1, '0000-00-00 00:00:00', 1),
 (7, 'module_ca63f5bbe511c317fa0ab37a4c173669.JPG', 'image/jpeg', '/assets/backend/media/uploads/module_ca63f5bbe511c317fa0ab37a4c173669.JPG', 1, '0000-00-00 00:00:00', 1),
-(8, 'module_82e705462e010c472729f5b8382f31f3.jpg', 'image/jpeg', '/assets/backend/media/uploads/module_82e705462e010c472729f5b8382f31f3.jpg', 1, '0000-00-00 00:00:00', 1);
+(8, 'module_82e705462e010c472729f5b8382f31f3.jpg', 'image/jpeg', '/assets/backend/media/uploads/module_82e705462e010c472729f5b8382f31f3.jpg', 1, '0000-00-00 00:00:00', 1),
+(9, 'module_7ae4eb7de077fa246a4850c2a387a450.pdf', 'applicatio', '/assets/backend/media/uploads/module_7ae4eb7de077fa246a4850c2a387a450.pdf', 11, '0000-00-00 00:00:00', 1),
+(10, 'module_2cdbfbe9a2c526f4c160e85ead713500.pdf', 'applicatio', '/assets/backend/media/uploads/module_2cdbfbe9a2c526f4c160e85ead713500.pdf', 11, '0000-00-00 00:00:00', 1);
 
 -- --------------------------------------------------------
 
@@ -133,7 +135,8 @@ CREATE TABLE `tmodule` (
 --
 
 INSERT INTO `tmodule` (`fmoduleid`, `fmodulename`, `fmediaid`, `fmodulestatus`, `created_at`, `updated_at`) VALUES
-(2, 'module', 7, 1, '2019-07-06 02:11:39', '2019-07-07 10:11:01');
+(2, 'module', 7, 1, '2019-07-06 02:11:39', '2019-07-07 19:05:07'),
+(7, 'xxx', 10, 1, '2019-07-07 18:37:46', '2019-07-07 19:04:50');
 
 -- --------------------------------------------------------
 
@@ -156,7 +159,8 @@ CREATE TABLE `tposition` (
 INSERT INTO `tposition` (`fpositionid`, `fpositionname`, `fpositionstatus`, `created_at`, `updated_at`) VALUES
 (1, 'Manager', 1, NULL, NULL),
 (3, 'IT Staff', 1, '2019-07-05 20:51:14', '2019-07-05 20:56:57'),
-(4, 'Member biasa', 1, '2019-07-06 23:00:38', NULL);
+(4, 'Member biasa', 1, '2019-07-06 23:00:38', NULL),
+(6, 'guru', 1, '2019-07-07 18:15:18', NULL);
 
 -- --------------------------------------------------------
 
@@ -238,7 +242,8 @@ CREATE TABLE `ttrainingtype` (
 --
 
 INSERT INTO `ttrainingtype` (`ftraintypeid`, `ftraintypename`, `ftraintypestatus`, `created_at`, `updated_at`) VALUES
-(1, 'IT Industry', 1, '2019-07-06 08:40:55', '2019-07-06 08:41:47');
+(1, 'IT Industry', 1, '2019-07-06 08:40:55', '2019-07-06 08:41:47'),
+(2, 'Youtube', 1, '2019-07-07 19:05:19', '2019-07-07 19:05:25');
 
 -- --------------------------------------------------------
 
@@ -250,7 +255,7 @@ CREATE TABLE `tusers` (
   `fuserid` int(10) UNSIGNED NOT NULL,
   `froleid` int(11) NOT NULL,
   `fusername` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `fuseremail` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `fuseremail` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `fuserpassword` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `fuseraddress` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `fnik` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -272,7 +277,11 @@ CREATE TABLE `tusers` (
 INSERT INTO `tusers` (`fuserid`, `froleid`, `fusername`, `fuseremail`, `fuserpassword`, `fuseraddress`, `fnik`, `fnpwp`, `fusersoftskill`, `fuserhardskill`, `fuserbirthdate`, `fremembermetoken`, `fuserstatus`, `fporgotcode`, `created_at`, `updated_at`) VALUES
 (1, 1, 'admin', 'admin@123.com', 'fcea920f7412b5da7be0cf42b8c93759', 'Jl.Widuri no.94 Banyuwangi', '9000000009', '9000000009', 'menulis', 'hardskill', '1999-01-05', NULL, 1, NULL, '2019-07-04 17:00:00', NULL),
 (8, 2, 'Aldiyan', 'aldian@train.com', 'e10adc3949ba59abbe56e057f20f883e', 'jl. widuri', '9929299', '99999999', '', '', '2019-07-23', NULL, 1, NULL, '2019-07-06 18:15:45', NULL),
-(9, 2, 'roman', 'wildan00x@gmail.com', '1504dafadb91526562eb0ab2c1fcef88', 'jl.endah', '999999', '999999', '', '', '2019-07-09', NULL, 1, '', '2019-07-06 18:22:00', NULL);
+(9, 2, 'roman', 'wildan00x@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'jl.endah', '999999', '999999', '', '', '2019-07-09', NULL, 1, '', '2019-07-06 18:22:00', NULL),
+(11, 1, 'Hanum', 'hanum@yahoo.co.id', 'e10adc3949ba59abbe56e057f20f883e', 'Banyuwangi', '', '', '', '', '2019-06-30', NULL, 1, NULL, '2019-07-07 17:23:15', NULL),
+(12, 2, '123456', 'yy@yyy.com', 'e10adc3949ba59abbe56e057f20f883e', '12345', '1234567', '123456', '', '', '2019-07-22', NULL, 1, NULL, '2019-07-07 18:13:36', NULL),
+(13, 1, 'yuyu', 'rrrrr@tttttt.com', 'e10adc3949ba59abbe56e057f20f883e', '123456qwe', '', '', '', '', '2019-07-01', NULL, 1, NULL, '2019-07-07 18:14:12', NULL),
+(14, 2, '123456', 'rrrr@ee.com', 'e10adc3949ba59abbe56e057f20f883e', '123456', '123456', '12345', '', '', '2019-07-22', NULL, 1, NULL, '2019-07-07 19:25:02', NULL);
 
 --
 -- Indexes for dumped tables
@@ -359,19 +368,19 @@ ALTER TABLE `tcertificate`
 -- AUTO_INCREMENT untuk tabel `tmedia`
 --
 ALTER TABLE `tmedia`
-  MODIFY `fmediaid` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `fmediaid` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT untuk tabel `tmodule`
 --
 ALTER TABLE `tmodule`
-  MODIFY `fmoduleid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `fmoduleid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `tposition`
 --
 ALTER TABLE `tposition`
-  MODIFY `fpositionid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `fpositionid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `trole`
@@ -389,13 +398,13 @@ ALTER TABLE `ttrainingplan`
 -- AUTO_INCREMENT untuk tabel `ttrainingtype`
 --
 ALTER TABLE `ttrainingtype`
-  MODIFY `ftraintypeid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ftraintypeid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tusers`
 --
 ALTER TABLE `tusers`
-  MODIFY `fuserid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `fuserid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
