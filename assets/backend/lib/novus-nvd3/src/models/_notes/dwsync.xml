@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="axis.js" server="dantech.id//var/www/cms/" local="130385927180000000" remote="131356970720000000" />
+<file name="boilerplate.js" server="dantech.id//var/www/cms/" local="130385927180000000" remote="131356970730000000" />
+<file name="bullet.js" server="dantech.id//var/www/cms/" local="130385927180000000" remote="131356970730000000" />
+<file name="bulletChart.js" server="dantech.id//var/www/cms/" local="130385927180000000" remote="131356970740000000" />
+<file name="cumulativeLineChart.js" server="dantech.id//var/www/cms/" local="130385927180000000" remote="131356970740000000" />
+<file name="discreteBar.js" server="dantech.id//var/www/cms/" local="130385927180000000" remote="131356970740000000" />
+<file name="discreteBarChart.js" server="dantech.id//var/www/cms/" local="130385927180000000" remote="131356970740000000" />
+<file name="distribution.js" server="dantech.id//var/www/cms/" local="130385927180000000" remote="131356970740000000" />
+<file name="historicalBar.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970740000000" />
+<file name="historicalBarChart.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970740000000" />
+<file name="indentedTree.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970750000000" />
+<file name="legend.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970750000000" />
+<file name="line.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970750000000" />
+<file name="lineChart.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970750000000" />
+<file name="linePlusBarChart.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970750000000" />
+<file name="linePlusBarWithFocusChart.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970750000000" />
+<file name="lineWithFisheye.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970750000000" />
+<file name="lineWithFisheyeChart.js" server="dantech.id//var/www/cms/" local="130385927200000000" remote="131356970760000000" />
+<file name="lineWithFocusChart.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970760000000" />
+<file name="multiBar.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970760000000" />
+<file name="multiBarChart.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970760000000" />
+<file name="multiBarHorizontal.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970770000000" />
+<file name="multiBarHorizontalChart.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970770000000" />
+<file name="multiBarTimeSeries.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970770000000" />
+<file name="multiBarTimeSeriesChart.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970770000000" />
+<file name="multiChart.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970770000000" />
+<file name="ohlcBar.js" server="dantech.id//var/www/cms/" local="130385927220000000" remote="131356970770000000" />
+<file name="parallelCoordinates.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970770000000" />
+<file name="pie.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970780000000" />
+<file name="pieChart.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970780000000" />
+<file name="scatter.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970780000000" />
+<file name="scatterChart.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970780000000" />
+<file name="scatterPlusLineChart.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970780000000" />
+<file name="sparkline.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970780000000" />
+<file name="sparklinePlus.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970790000000" />
+<file name="stackedArea.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970790000000" />
+<file name="stackedAreaChart.js" server="dantech.id//var/www/cms/" local="130385927240000000" remote="131356970790000000" />
+</dwsync>
